@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آموزشگاه کامپیوتر و شبکه</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazir:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <span><i class="fas fa-phone"></i> ۰۲۱-۱۲۳۴۵۶۷۸</span>
+                        <span class="ms-3"><i class="fas fa-envelope"></i> info@computeracademy.ir</span>
+                    </div>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-laptop-code"></i>
+                آموزشگاه کامپیوتر و شبکه
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">خانه</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            محصولات
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#video-courses">دوره‌های ویدئویی</a></li>
+                            <li><a class="dropdown-item" href="#ebooks">کتاب‌های الکترونیکی</a></li>
+                            <li><a class="dropdown-item" href="#articles">مقالات تخصصی</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">بلاگ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">فروشگاه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">تماس با ما</a>
+                    </li>
+                </ul>
+                
+                <div class="navbar-actions">
+                    <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <i class="fas fa-sign-in-alt"></i> ورود
+                    </button>
+                    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#registerModal">
+                        <i class="fas fa-user-plus"></i> ثبت نام
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Slider Section -->
+        <section id="home" class="slider-section">
+            <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"></button>
+                </div>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="slide-content">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <h1 class="slide-title">یادگیری کامپیوتر و شبکه</h1>
+                                        <p class="slide-description">بهترین دوره‌های آموزشی کامپیوتر و شبکه را با ما تجربه کنید</p>
+                                        <a href="#" class="btn btn-primary btn-lg">شروع یادگیری</a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img src="https://via.placeholder.com/600x400?text=Computer+Training" alt="آموزش کامپیوتر" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="slide-content">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <h1 class="slide-title">دوره‌های تخصصی شبکه</h1>
+                                        <p class="slide-description">از مبتدی تا پیشرفته، همه چیز را یاد بگیرید</p>
+                                        <a href="#" class="btn btn-warning btn-lg">مشاهده دوره‌ها</a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img src="https://via.placeholder.com/600x400?text=Network+Training" alt="آموزش شبکه" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="slide-content">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <h1 class="slide-title">مقالات و کتاب‌های تخصصی</h1>
+                                        <p class="slide-description">منابع کامل و به‌روز برای یادگیری عمیق</p>
+                                        <a href="#" class="btn btn-success btn-lg">دانلود منابع</a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img src="https://via.placeholder.com/600x400?text=Learning+Resources" alt="منابع آموزشی" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Main Content Area -->
+                <div class="col-lg-9">
+                    <!-- Featured Products -->
+                    <section class="products-section my-5">
+                        <h2 class="section-title">
+                            <i class="fas fa-star"></i>
+                            محصولات ویژه
+                        </h2>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/300x200?text=Network+Course" alt="دوره شبکه">
+                                        <div class="product-overlay">
+                                            <a href="#" class="btn btn-primary">مشاهده</a>
+                                            <a href="#" class="btn btn-warning">خرید</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h4>دوره جامع شبکه</h4>
+                                        <p>آموزش کامل شبکه از صفر تا صد</p>
+                                        <div class="product-price">
+                                            <span class="current-price">۲۹۹,۰۰۰ تومان</span>
+                                            <span class="old-price">۳۹۹,۰۰۰ تومان</span>
+                                        </div>
+                                        <div class="product-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span>(۴۵ نظر)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 mb-4">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/300x200?text=Python+Course" alt="دوره پایتون">
+                                        <div class="product-overlay">
+                                            <a href="#" class="btn btn-primary">مشاهده</a>
+                                            <a href="#" class="btn btn-warning">خرید</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h4>برنامه‌نویسی پایتون</h4>
+                                        <p>یادگیری برنامه‌نویسی از پایه</p>
+                                        <div class="product-price">
+                                            <span class="current-price">۱۹۹,۰۰۰ تومان</span>
+                                        </div>
+                                        <div class="product-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>(۳۲ نظر)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 mb-4">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/300x200?text=Security+Course" alt="دوره امنیت">
+                                        <div class="product-overlay">
+                                            <a href="#" class="btn btn-primary">مشاهده</a>
+                                            <a href="#" class="btn btn-warning">خرید</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h4>امنیت شبکه</h4>
+                                        <p>حفاظت از شبکه و سیستم‌ها</p>
+                                        <div class="product-price">
+                                            <span class="current-price">۳۴۹,۰۰۰ تومان</span>
+                                        </div>
+                                        <div class="product-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span>(۲۸ نظر)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Best Selling Products -->
+                    <section class="products-section my-5">
+                        <h2 class="section-title">
+                            <i class="fas fa-fire"></i>
+                            پرفروش‌ترین محصولات
+                        </h2>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="product-card horizontal">
+                                    <div class="row g-0">
+                                        <div class="col-4">
+                                            <img src="https://via.placeholder.com/150x100?text=Linux" alt="لینوکس" class="img-fluid">
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="product-info">
+                                                <h5>آموزش لینوکس</h5>
+                                                <p>مدیریت سرور و سیستم‌عامل لینوکس</p>
+                                                <div class="product-price">
+                                                    <span class="current-price">۲۴۹,۰۰۰ تومان</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-4">
+                                <div class="product-card horizontal">
+                                    <div class="row g-0">
+                                        <div class="col-4">
+                                            <img src="https://via.placeholder.com/150x100?text=Database" alt="پایگاه داده" class="img-fluid">
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="product-info">
+                                                <h5>پایگاه داده</h5>
+                                                <p>طراحی و مدیریت پایگاه داده</p>
+                                                <div class="product-price">
+                                                    <span class="current-price">۱۷۹,۰۰۰ تومان</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Latest Products -->
+                    <section class="products-section my-5">
+                        <h2 class="section-title">
+                            <i class="fas fa-clock"></i>
+                            تازه‌ترین محصولات
+                        </h2>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="product-card">
+                                    <div class="product-badge">جدید</div>
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/300x200?text=Cloud+Course" alt="دوره کلود">
+                                    </div>
+                                    <div class="product-info">
+                                        <h4>محاسبات ابری</h4>
+                                        <p>یادگیری AWS و Azure</p>
+                                        <div class="product-price">
+                                            <span class="current-price">۴۹۹,۰۰۰ تومان</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 mb-4">
+                                <div class="product-card">
+                                    <div class="product-badge">جدید</div>
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/300x200?text=DevOps+Course" alt="دوره DevOps">
+                                    </div>
+                                    <div class="product-info">
+                                        <h4>DevOps و اتوماسیون</h4>
+                                        <p>Docker، Kubernetes و CI/CD</p>
+                                        <div class="product-price">
+                                            <span class="current-price">۳۷۹,۰۰۰ تومان</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 mb-4">
+                                <div class="product-card">
+                                    <div class="product-badge">در حال تکمیل</div>
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/300x200?text=AI+Course" alt="دوره هوش مصنوعی">
+                                    </div>
+                                    <div class="product-info">
+                                        <h4>هوش مصنوعی</h4>
+                                        <p>Machine Learning و Deep Learning</p>
+                                        <div class="product-price">
+                                            <span class="current-price">۵۹۹,۰۰۰ تومان</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-3">
+                    <aside class="sidebar">
+                        <!-- Search Box -->
+                        <div class="sidebar-widget">
+                            <h4 class="widget-title">جستجو</h4>
+                            <div class="search-box">
+                                <input type="text" class="form-control" placeholder="جستجو در محصولات...">
+                                <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Categories -->
+                        <div class="sidebar-widget">
+                            <h4 class="widget-title">دسته‌بندی موضوعی</h4>
+                            <ul class="category-list">
+                                <li><a href="#"><i class="fas fa-network-wired"></i> شبکه و امنیت <span class="count">(۱۵)</span></a></li>
+                                <li><a href="#"><i class="fas fa-code"></i> برنامه‌نویسی <span class="count">(۲۳)</span></a></li>
+                                <li><a href="#"><i class="fas fa-database"></i> پایگاه داده <span class="count">(۸)</span></a></li>
+                                <li><a href="#"><i class="fas fa-server"></i> مدیریت سرور <span class="count">(۱۲)</span></a></li>
+                                <li><a href="#"><i class="fas fa-cloud"></i> محاسبات ابری <span class="count">(۶)</span></a></li>
+                                <li><a href="#"><i class="fas fa-mobile-alt"></i> توسعه موبایل <span class="count">(۱۰)</span></a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Archive -->
+                        <div class="sidebar-widget">
+                            <h4 class="widget-title">آرشیو تاریخی</h4>
+                            <ul class="archive-list">
+                                <li><a href="#">دی ۱۴۰۲ <span class="count">(۴)</span></a></li>
+                                <li><a href="#">آذر ۱۴۰۲ <span class="count">(۷)</span></a></li>
+                                <li><a href="#">آبان ۱۴۰۲ <span class="count">(۳)</span></a></li>
+                                <li><a href="#">مهر ۱۴۰۲ <span class="count">(۵)</span></a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Useful Links -->
+                        <div class="sidebar-widget">
+                            <h4 class="widget-title">لینک‌های مفید</h4>
+                            <ul class="useful-links">
+                                <li><a href="#"><i class="fas fa-external-link-alt"></i> سیسکو نتورکینگ</a></li>
+                                <li><a href="#"><i class="fas fa-external-link-alt"></i> مایکروسافت لرن</a></li>
+                                <li><a href="#"><i class="fas fa-external-link-alt"></i> AWS آمازون</a></li>
+                                <li><a href="#"><i class="fas fa-external-link-alt"></i> گوگل کلود</a></li>
+                                <li><a href="#"><i class="fas fa-external-link-alt"></i> گیت‌هاب</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Newsletter -->
+                        <div class="sidebar-widget">
+                            <h4 class="widget-title">خبرنامه</h4>
+                            <p>از آخرین آموزش‌ها و تخفیف‌ها باخبر شوید</p>
+                            <form class="newsletter-form">
+                                <input type="email" class="form-control mb-2" placeholder="ایمیل شما">
+                                <button type="submit" class="btn btn-warning w-100">عضویت</button>
+                            </form>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">درباره آموزشگاه</h5>
+                    <p class="footer-text">
+                        من علی محمدی، مدرس و مالک این آموزشگاه هستم. بیش از ۱۰ سال تجربه در زمینه آموزش کامپیوتر و شبکه دارم و تا کنون بیش از ۵۰۰۰ دانشجو را آموزش داده‌ام. هدف من ارائه بهترین آموزش‌های به‌روز و کاربردی است.
+                    </p>
+                    <div class="instructor-info">
+                        <img src="https://via.placeholder.com/80x80?text=Instructor" alt="علی محمدی" class="instructor-photo">
+                        <div class="instructor-details">
+                            <h6>علی محمدی</h6>
+                            <p>مدرس و مالک آموزشگاه</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Categories -->
+                <div class="col-lg-2 mb-4">
+                    <h5 class="footer-title">دسته‌بندی محصولات</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">دوره‌های ویدئویی</a></li>
+                        <li><a href="#">کتاب‌های الکترونیکی</a></li>
+                        <li><a href="#">مقالات تخصصی</a></li>
+                        <li><a href="#">فایل‌های PDF</a></li>
+                        <li><a href="#">نرم‌افزارهای آموزشی</a></li>
+                    </ul>
+                </div>
+
+                <!-- Pages -->
+                <div class="col-lg-2 mb-4">
+                    <h5 class="footer-title">صفحات</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">صفحه اصلی</a></li>
+                        <li><a href="blog.html">بلاگ</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="shop.html">فروشگاه</a></li>
+                        <li><a href="contact.html">تماس با ما</a></li>
+                    </ul>
+                </div>
+
+                <!-- Topics -->
+                <div class="col-lg-2 mb-4">
+                    <h5 class="footer-title">موضوعات آموزشی</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">شبکه و امنیت</a></li>
+                        <li><a href="#">برنامه‌نویسی</a></li>
+                        <li><a href="#">پایگاه داده</a></li>
+                        <li><a href="#">مدیریت سرور</a></li>
+                        <li><a href="#">محاسبات ابری</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social & Contact -->
+                <div class="col-lg-2 mb-4">
+                    <h5 class="footer-title">شبکه‌های اجتماعی</h5>
+                    <div class="social-links-footer">
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="contact-info-footer mt-3">
+                        <p><i class="fas fa-phone"></i> ۰۲۱-۱۲۳۴۵۶۷۸</p>
+                        <p><i class="fas fa-envelope"></i> info@computeracademy.ir</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; ۱۴۰۲ آموزشگاه کامپیوتر و شبکه. تمامی حقوق محفوظ است.</p>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <div class="payment-methods">
+                            <span>روش‌های پرداخت:</span>
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">ورود به حساب کاربری</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">ایمیل</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">رمز عبور</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">مرا به خاطر بسپار</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">ورود</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <a href="#" class="text-decoration-none">رمز عبور خود را فراموش کرده‌اید؟</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">ثبت نام</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">نام و نام خانوادگی</label>
+                            <input type="text" class="form-control" id="registerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">ایمیل</label>
+                            <input type="email" class="form-control" id="registerEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPhone" class="form-label">شماره تلفن</label>
+                            <input type="tel" class="form-control" id="registerPhone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">رمز عبور</label>
+                            <input type="password" class="form-control" id="registerPassword" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerConfirmPassword" class="form-label">تکرار رمز عبور</label>
+                            <input type="password" class="form-control" id="registerConfirmPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+                            <label class="form-check-label" for="agreeTerms">
+                                با <a href="#">قوانین و مقررات</a> موافقم
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100">ثبت نام</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
