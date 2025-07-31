@@ -1,0 +1,57 @@
+{
+  "name": "computer-academy-website",
+  "version": "1.0.0",
+  "description": "وبسایت آموزشی کامپیوتر و شبکه - آکادمی تک",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/index.html",
+    "dev": "live-server --port=3000 --open=/index.html --watch=*.html,*.css,*.js",
+    "build": "echo 'Building static website...' && echo 'Build completed!'",
+    "test": "echo 'No tests specified yet'",
+    "lint": "echo 'Linting CSS and JS files...'",
+    "deploy": "echo 'Deploying to production...'"
+  },
+  "keywords": [
+    "آموزش",
+    "کامپیوتر", 
+    "شبکه",
+    "فیلم آموزشی",
+    "مقالات",
+    "PDF",
+    "فروش آنلاین",
+    "ایران",
+    "فارسی"
+  ],
+  "author": {
+    "name": "آکادمی تک",
+    "email": "info@computer-academy.ir",
+    "url": "https://computer-academy.ir"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/computer-academy/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/computer-academy/website/issues"
+  },
+  "homepage": "https://computer-academy.ir",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "funding": {
+    "type": "individual",
+    "url": "https://computer-academy.ir/support"
+  }
+}

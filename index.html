@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آکادمی کامپیوتر و شبکه - آموزش‌های تخصصی</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazir:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> 021-12345678</span>
+                    <span><i class="fas fa-envelope"></i> info@computer-academy.ir</span>
+                </div>
+                <div class="auth-buttons">
+                    <button class="btn-auth" onclick="openModal('login')">ورود</button>
+                    <button class="btn-auth" onclick="openModal('register')">ثبت نام</button>
+                </div>
+            </div>
+            
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>آکادمی تک</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">خانه</a></li>
+                    <li><a href="#courses">دوره‌ها</a></li>
+                    <li><a href="#shop">فروشگاه</a></li>
+                    <li><a href="#blog">بلاگ</a></li>
+                    <li><a href="#articles">مقالات</a></li>
+                    <li><a href="#about">درباره ما</a></li>
+                    <li><a href="#contact">تماس با ما</a></li>
+                </ul>
+                
+                <div class="search-cart">
+                    <div class="search-box">
+                        <input type="text" placeholder="جستجو...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+                
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Main Content Area -->
+                <div class="main-section">
+                    <!-- Hero Slider -->
+                    <section class="hero-slider" id="home">
+                        <div class="slider-container">
+                            <div class="slide active">
+                                <div class="slide-content">
+                                    <h1>آموزش‌های پیشرفته کامپیوتر و شبکه</h1>
+                                    <p>با بهترین مدرسان و جدیدترین محتوا، مهارت‌های خود را ارتقا دهید</p>
+                                    <button class="btn-primary">شروع یادگیری</button>
+                                </div>
+                                <div class="slide-image">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <h1>فیلم‌های آموزشی حرفه‌ای</h1>
+                                    <p>بیش از 500 ساعت محتوای ویدئویی با کیفیت بالا</p>
+                                    <button class="btn-primary">مشاهده دوره‌ها</button>
+                                </div>
+                                <div class="slide-image">
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <h1>مقالات و کتاب‌های تخصصی</h1>
+                                    <p>دسترسی به هزاران صفحه محتوای آموزشی کیفی</p>
+                                    <button class="btn-primary">مطالعه مقالات</button>
+                                </div>
+                                <div class="slide-image">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="slider-controls">
+                            <button class="prev-btn"><i class="fas fa-chevron-right"></i></button>
+                            <button class="next-btn"><i class="fas fa-chevron-left"></i></button>
+                        </div>
+                        
+                        <div class="slider-dots">
+                            <span class="dot active" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </section>
+
+                    <!-- Products Sections -->
+                    <section class="products-section">
+                        <div class="section-tabs">
+                            <button class="tab-btn active" onclick="showTab('bestsellers')">پرفروش‌ترین</button>
+                            <button class="tab-btn" onclick="showTab('latest')">جدیدترین</button>
+                            <button class="tab-btn" onclick="showTab('ongoing')">در حال انجام</button>
+                            <button class="tab-btn" onclick="showTab('completed')">تمام شده</button>
+                        </div>
+
+                        <div class="tab-content active" id="bestsellers">
+                            <div class="products-grid">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <i class="fas fa-server"></i>
+                                        <div class="product-badge">پرفروش</div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>آموزش کامل مدیریت سرور</h3>
+                                        <p>آموزش جامع نصب، پیکربندی و مدیریت سرورهای لینوکس</p>
+                                        <div class="product-meta">
+                                            <span class="price">299,000 تومان</span>
+                                            <span class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                5.0
+                                            </span>
+                                        </div>
+                                        <button class="btn-cart">افزودن به سبد</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <div class="product-badge">پرفروش</div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>امنیت شبکه و هک اخلاقی</h3>
+                                        <p>آموزش کامل تست نفوذ و امنیت شبکه‌های کامپیوتری</p>
+                                        <div class="product-meta">
+                                            <span class="price">450,000 تومان</span>
+                                            <span class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                4.8
+                                            </span>
+                                        </div>
+                                        <button class="btn-cart">افزودن به سبد</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>پایگاه داده MySQL</h3>
+                                        <p>آموزش پیشرفته طراحی و بهینه‌سازی پایگاه‌های داده</p>
+                                        <div class="product-meta">
+                                            <span class="price">189,000 تومان</span>
+                                            <span class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                4.9
+                                            </span>
+                                        </div>
+                                        <button class="btn-cart">افزودن به سبد</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="latest">
+                            <div class="products-grid">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <i class="fas fa-cloud"></i>
+                                        <div class="product-badge new">جدید</div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>کلود کامپیوتینگ AWS</h3>
+                                        <p>آموزش کامل سرویس‌های ابری آمازون</p>
+                                        <div class="product-meta">
+                                            <span class="price">599,000 تومان</span>
+                                            <span class="rating">جدید</span>
+                                        </div>
+                                        <button class="btn-cart">افزودن به سبد</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="ongoing">
+                            <div class="products-grid">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <i class="fas fa-code"></i>
+                                        <div class="product-badge ongoing">در حال انجام</div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>برنامه‌نویسی Python</h3>
+                                        <p>آموزش جامع زبان برنامه‌نویسی پایتون</p>
+                                        <div class="product-meta">
+                                            <span class="price">350,000 تومان</span>
+                                            <span class="progress">60% تمام شده</span>
+                                        </div>
+                                        <button class="btn-cart">پیش خرید</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="completed">
+                            <div class="products-grid">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <i class="fas fa-desktop"></i>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>مونتاژ کامپیوتر</h3>
+                                        <p>آموزش کامل مونتاژ و تعمیر کامپیوتر</p>
+                                        <div class="product-meta">
+                                            <span class="price">199,000 تومان</span>
+                                            <span class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                4.7
+                                            </span>
+                                        </div>
+                                        <button class="btn-cart">افزودن به سبد</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Features Section -->
+                    <section class="features-section">
+                        <h2>چرا آکادمی تک؟</h2>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <i class="fas fa-video"></i>
+                                <h3>ویدئوهای باکیفیت</h3>
+                                <p>فیلم‌های آموزشی با کیفیت Full HD و صوت کریستالی</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-certificate"></i>
+                                <h3>گواهینامه معتبر</h3>
+                                <p>دریافت گواهینامه معتبر پس از اتمام هر دوره</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-headset"></i>
+                                <h3>پشتیبانی 24/7</h3>
+                                <p>پاسخگویی به سوالات شما در کمترین زمان ممکن</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-users"></i>
+                                <h3>انجمن کاربران</h3>
+                                <p>عضویت در انجمن فعال دانشجویان و اساتید</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-widget">
+                        <h3>دسته‌بندی موضوعی</h3>
+                        <ul class="category-list">
+                            <li><a href="#"><i class="fas fa-network-wired"></i> شبکه کامپیوتری</a></li>
+                            <li><a href="#"><i class="fas fa-server"></i> مدیریت سرور</a></li>
+                            <li><a href="#"><i class="fas fa-shield-alt"></i> امنیت شبکه</a></li>
+                            <li><a href="#"><i class="fas fa-database"></i> پایگاه داده</a></li>
+                            <li><a href="#"><i class="fas fa-code"></i> برنامه‌نویسی</a></li>
+                            <li><a href="#"><i class="fas fa-cloud"></i> کلود کامپیوتینگ</a></li>
+                            <li><a href="#"><i class="fas fa-desktop"></i> سخت‌افزار</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>آرشیو زمانی</h3>
+                        <ul class="archive-list">
+                            <li><a href="#">دی 1403 (12)</a></li>
+                            <li><a href="#">آذر 1403 (8)</a></li>
+                            <li><a href="#">آبان 1403 (15)</a></li>
+                            <li><a href="#">مهر 1403 (10)</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>لینک‌های مفید</h3>
+                        <ul class="useful-links">
+                            <li><a href="#"><i class="fas fa-download"></i> دانلود نرم‌افزارها</a></li>
+                            <li><a href="#"><i class="fas fa-book"></i> کتابخانه مقالات</a></li>
+                            <li><a href="#"><i class="fas fa-question-circle"></i> سوالات متداول</a></li>
+                            <li><a href="#"><i class="fas fa-graduation-cap"></i> مسیرهای یادگیری</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>محبوب‌ترین مقالات</h3>
+                        <div class="popular-posts">
+                            <div class="post-item">
+                                <i class="fas fa-fire"></i>
+                                <div>
+                                    <h4>راه‌اندازی VPN Server</h4>
+                                    <span>1403/10/15</span>
+                                </div>
+                            </div>
+                            <div class="post-item">
+                                <i class="fas fa-fire"></i>
+                                <div>
+                                    <h4>بهینه‌سازی عملکرد شبکه</h4>
+                                    <span>1403/10/10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>آکادمی تک</h3>
+                    <p>ما با هدف ارائه بهترین آموزش‌های کامپیوتر و شبکه، مسیر شما را در دنیای تکنولوژی هموار می‌کنیم. با بیش از 10 سال تجربه در حوزه آموزش، تیم ما آماده خدمات‌رسانی به شما عزیزان است.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>دسته‌بندی محصولات</h3>
+                    <ul>
+                        <li><a href="#">فیلم‌های آموزشی</a></li>
+                        <li><a href="#">کتاب‌های الکترونیکی</a></li>
+                        <li><a href="#">مقالات تخصصی</a></li>
+                        <li><a href="#">نرم‌افزارهای کاربردی</a></li>
+                        <li><a href="#">گواهینامه‌های معتبر</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>صفحات سایت</h3>
+                    <ul>
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">فروشگاه</a></li>
+                        <li><a href="#">بلاگ</a></li>
+                        <li><a href="#">مقالات</a></li>
+                        <li><a href="#">درباره ما</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+                        <li><a href="#">شرایط استفاده</a></li>
+                        <li><a href="#">حریم خصوصی</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>تماس با ما</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>تهران، خیابان ولیعصر، پلاک 123</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>021-12345678</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@computer-academy.ir</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 1403 آکادمی تک. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('login')">&times;</span>
+            <h2>ورود به حساب کاربری</h2>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label>ایمیل یا نام کاربری</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>رمز عبور</label>
+                    <input type="password" required>
+                </div>
+                <div class="form-options">
+                    <label class="remember">
+                        <input type="checkbox"> مرا به خاطر بسپار
+                    </label>
+                    <a href="#" class="forgot-password">فراموشی رمز عبور؟</a>
+                </div>
+                <button type="submit" class="btn-submit">ورود</button>
+                <p class="switch-auth">حساب کاربری ندارید؟ <a href="#" onclick="switchModal('register')">ثبت نام کنید</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('register')">&times;</span>
+            <h2>ثبت نام</h2>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label>نام و نام خانوادگی</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>ایمیل</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>شماره تلفن</label>
+                    <input type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label>رمز عبور</label>
+                    <input type="password" required>
+                </div>
+                <div class="form-group">
+                    <label>تکرار رمز عبور</label>
+                    <input type="password" required>
+                </div>
+                <div class="form-options">
+                    <label class="remember">
+                        <input type="checkbox" required> قوانین و شرایط استفاده را می‌پذیرم
+                    </label>
+                </div>
+                <button type="submit" class="btn-submit">ثبت نام</button>
+                <p class="switch-auth">قبلاً ثبت نام کرده‌اید؟ <a href="#" onclick="switchModal('login')">وارد شوید</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
